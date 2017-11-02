@@ -10,7 +10,7 @@ Pathfinder will be the Go backend for the project. It will receive game player's
 + [Docker](https://www.docker.com)
 	
 ## Owners/Contributors
-of the project are as follows:
+Each of us are responsible for functions of the project, as well as unit tests and quality assurance. Weekly sprint meetings will also be noted and posted on the github for transparency. 
 
 Owners/Contributors | Email
 --- | ---
@@ -20,6 +20,5 @@ Owners/Contributors | Email
 [Jerry Xie](https://github.com/JerryXie98) | jerry_xie@hotmail.com
 [Jay C.](https://github.com/Corsage) | jayc.chowdhary@gmail.com
 
-Each of us are responsible for functions of the project, as well as unit tests and quality assurance. Weekly sprint meetings will also be noted and posted on the github for transparency. 
 
 **Note: This README is also very prone to change.**
