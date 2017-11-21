@@ -4,7 +4,7 @@ type GameBoardGenerator struct { }
 
 func (r GameBoardGenerator) Generate(xPosPlayer []int, yPosPlayer []int,
         xPosEnemy []int, yPosEnemy []int, xPosObstacle []int,
-        yPosObstacle []int, previousBoard GameBoard) {
+        yPosObstacle []int, previousBoard GameBoard) GameBoard {
 
     gameBoard := previousBoard
     if previousBoard.GetBoard() == nil {
@@ -21,5 +21,6 @@ func (r GameBoardGenerator) Generate(xPosPlayer []int, yPosPlayer []int,
     gameBoard.Populate(xPosObstacle, yPosObstacle, "o")
     gameBoard.Populate(xPosEnemy, yPosEnemy, "e")
     gameBoard.Populate(xPosPlayer, yPosPlayer, "p")
+    return gameBoard
 }
 
