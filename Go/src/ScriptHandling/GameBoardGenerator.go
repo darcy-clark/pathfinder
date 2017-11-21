@@ -1,20 +1,6 @@
 package ScriptHandling
 
-import(
-    "fmt"
-)
-
-type GameBoardGenerator struct {
-    variable int
-}
-
-func (r *GameBoardGenerator) SetVariable(variable int) {
-    r.variable = variable
-}
-
-func (r GameBoardGenerator) GetVariable() int {
-    return r.variable
-}
+type GameBoardGenerator struct { }
 
 func (r GameBoardGenerator) Generate(xPosPlayer []int, yPosPlayer []int,
         xPosEnemy []int, yPosEnemy []int, xPosObstacle []int,
@@ -35,7 +21,5 @@ func (r GameBoardGenerator) Generate(xPosPlayer []int, yPosPlayer []int,
     gameBoard.Populate(xPosObstacle, yPosObstacle, "o")
     gameBoard.Populate(xPosEnemy, yPosEnemy, "e")
     gameBoard.Populate(xPosPlayer, yPosPlayer, "p")
-    fmt.Println(gameBoard.GetBoard())
-    fmt.Println(gameBoard)
 }
 
